@@ -1,0 +1,404 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\usepackage{pgfplots}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Análisis del SpeedUp para el tratamiento digital de imágenes
+\end_layout
+
+\begin_layout Author
+Isabel del Pilar Durán Chumillas
+\end_layout
+
+\begin_layout Section*
+1.
+ Para el problema realizado con grano fino
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+axis x line=center,
+\end_layout
+
+\begin_layout Plain Layout
+
+axis y line=center,
+\end_layout
+
+\begin_layout Plain Layout
+
+width={
+\backslash
+linewidth},
+\end_layout
+
+\begin_layout Plain Layout
+
+%xtick={1000,1800,...,10000},
+\end_layout
+
+\begin_layout Plain Layout
+
+%ytick={0.0000,0.0025,...,0.03},
+\end_layout
+
+\begin_layout Plain Layout
+
+xlabel={Dimensión matriz},
+\end_layout
+
+\begin_layout Plain Layout
+
+ylabel={SpeedUp},
+\end_layout
+
+\begin_layout Plain Layout
+
+ylabel near ticks,
+\end_layout
+
+\begin_layout Plain Layout
+
+xlabel near ticks,
+\end_layout
+
+\begin_layout Plain Layout
+
+xmin= 0,
+\end_layout
+
+\begin_layout Plain Layout
+
+%xmax=10000,
+\end_layout
+
+\begin_layout Plain Layout
+
+ymin=0,
+\end_layout
+
+\begin_layout Plain Layout
+
+%ymax=0.03
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addplot+ [mark=*, draw=red, mark options={color=red}] table {
+\end_layout
+
+\begin_layout Plain Layout
+
+1000 0.17334684556038704
+\end_layout
+
+\begin_layout Plain Layout
+
+1200 0.10508052585884113
+\end_layout
+
+\begin_layout Plain Layout
+
+1400 0.11206348225433656
+\end_layout
+
+\begin_layout Plain Layout
+
+1600 0.08544033353892
+\end_layout
+
+\begin_layout Plain Layout
+
+1800 0.08570217584264796
+\end_layout
+
+\begin_layout Plain Layout
+
+10000 0.41442055795479726
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+2.
+ Para el problema realizado con grano grueso
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{axis}[
+\end_layout
+
+\begin_layout Plain Layout
+
+axis x line=center,
+\end_layout
+
+\begin_layout Plain Layout
+
+axis y line=center,
+\end_layout
+
+\begin_layout Plain Layout
+
+width={
+\backslash
+linewidth},
+\end_layout
+
+\begin_layout Plain Layout
+
+%xtick={1000,1800,...,10000},
+\end_layout
+
+\begin_layout Plain Layout
+
+%ytick={0.0000,0.0025,...,0.03},
+\end_layout
+
+\begin_layout Plain Layout
+
+xlabel={Dimensión matriz},
+\end_layout
+
+\begin_layout Plain Layout
+
+ylabel={SpeedUp},
+\end_layout
+
+\begin_layout Plain Layout
+
+ylabel near ticks,
+\end_layout
+
+\begin_layout Plain Layout
+
+xlabel near ticks,
+\end_layout
+
+\begin_layout Plain Layout
+
+xmin= 0,
+\end_layout
+
+\begin_layout Plain Layout
+
+%xmax=10000,
+\end_layout
+
+\begin_layout Plain Layout
+
+ymin=0,
+\end_layout
+
+\begin_layout Plain Layout
+
+%ymax=0.03
+\end_layout
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+addplot+ [mark=*, draw=blue, mark options={color=blue}] table {
+\end_layout
+
+\begin_layout Plain Layout
+
+1000 37.972821544325015
+\end_layout
+
+\begin_layout Plain Layout
+
+1200 11.843459242530624
+\end_layout
+
+\begin_layout Plain Layout
+
+1400 13.604569519476462
+\end_layout
+
+\begin_layout Plain Layout
+
+1600 21.13109777491663
+\end_layout
+
+\begin_layout Plain Layout
+
+1800 26.24900569038103
+\end_layout
+
+\begin_layout Plain Layout
+
+10000 247.91586870918061
+\end_layout
+
+\begin_layout Plain Layout
+
+};
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{axis}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
