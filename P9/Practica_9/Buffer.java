@@ -2,7 +2,7 @@
 //MODIFICAR PARA TRABAJAR CON UN BUFFER DE MATRICES, SEGÚN SE PIDE EN EL EJERCICIO 2
 //LUEGO, HACER UN DISEÑO DE HEBRAS
  
-    public class Buffer {        
+    public class Buffer {
       private int numSlots = 0;
       private double[] buffer = null;
       private int putIn = 0, takeOut = 0;
@@ -36,7 +36,7 @@
           }
         valor = buffer[takeOut];
         takeOut = (takeOut + 1) % numSlots;
-        cont--;                           
+        cont--;
         notifyAll();
         return valor;
       }
