@@ -1,0 +1,15 @@
+public int[][] celdasAdyacentes(int fila, int columna){
+		int[][] matrizCeldasAdyacentes = new int[3][3];
+
+    	for (int i = 0; i < matrizCeldasAdyacentes.length; i++)
+    		for (int j = 0; j < matrizCeldasAdyacentes.length; j++)
+    			matrizCeldasAdyacentes[i][j] = 0;
+
+    	for(int i = -1; i <= 1; i++)
+    		for(int j = -1; j <= 1; j++) {
+    			if((fila + i) >= 0 && (fila + i) < 10 && (columna + j) >= 0 && (columna + j) < 10)
+    				matrizCeldasAdyacentes[i + 1][j + 1] = mundo[fila + i][columna + j];
+    		}
+
+    	return matrizCeldasAdyacentes;
+    }
