@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/isa/Documents/PCTR/Segunda Matrícula/Practicas/OTROS/aRendimientoCpp/main.cpp
+iostream
+-
+chrono
+-
+thread
+-
+vector
+-
+mutex
+-
+atomic
+-
+
