@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/isa/Documents/PCTR/Segunda Matrícula/Practicas/OTROS/transformacionParalelaMatriz/main.cpp
+iostream
+-
+thread
+-
+vector
+-
+
