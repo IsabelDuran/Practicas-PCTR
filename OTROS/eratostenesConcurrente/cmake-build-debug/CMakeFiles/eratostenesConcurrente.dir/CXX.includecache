@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/isa/Documents/PCTR/Segunda Matrícula/Practicas/OTROS/eratostenesConcurrente/main.cpp
+iostream
+-
+chrono
+-
+cmath
+-
+thread
+-
+vector
+-
+mutex
+-
+

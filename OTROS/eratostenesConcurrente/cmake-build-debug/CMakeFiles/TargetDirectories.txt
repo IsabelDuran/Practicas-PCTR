@@ -1,0 +1,3 @@
+/home/isa/Documents/PCTR/Segunda Matrícula/Practicas/OTROS/eratostenesConcurrente/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/isa/Documents/PCTR/Segunda Matrícula/Practicas/OTROS/eratostenesConcurrente/cmake-build-debug/CMakeFiles/eratostenesConcurrente.dir
+/home/isa/Documents/PCTR/Segunda Matrícula/Practicas/OTROS/eratostenesConcurrente/cmake-build-debug/CMakeFiles/edit_cache.dir
