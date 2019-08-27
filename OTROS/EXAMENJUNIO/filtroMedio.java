@@ -138,7 +138,7 @@ public class filtroMedio implements Runnable{
 		System.out.println("Por favor introduzca el tamaño de la matriz");
 		n = leerTeclado();
 		System.out.println("Por favor introduzca el número de hebras");
-		m = leerTeclado();
+		m = leerTeclado();        //Cb == 0
 
 		int inicio = 0, nTareas;
 
