@@ -127,6 +127,7 @@ public class acIncendioForestal implements Runnable {
 		}
 		ejecutor.shutdown();
 		ejecutor.awaitTermination(1000, TimeUnit.DAYS);
+
 		Long end = System.currentTimeMillis();
 
 		System.out.println("Se han tardado " + (end - start) + " milisegundos.");
